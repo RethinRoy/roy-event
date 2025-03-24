@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+}
+/* -------------------background------------------- */
+.back{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(pictures/bride-groom-wedding-reception_23-2150167248\ \(1\).jpg);
+    background-size:cover;
+    background-position: center;
+    z-index: -1;
+    opacity: .9;
+}
+.main{align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 35%;}
+
+/* .main:hover{
+    left: 30%;} */
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0;
+    color: white;
+}
+/* ------------------------------------navbar-------------------- */
+
+#nav1st{
+background-color: #0c0b0a;
+
+}
+.book{
+    background-color: #ef7817;
+    border-radius: 10px;
+    height: 50px;
+    width: 113px;
+    
+}
+.book1{
+    background-color: #ef7817;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    margin-left: 170px;
+    text-align: center;
+    
+}
+.book1:hover{
+    background-color:rgb(65, 62, 62);
+    color: #1c1714;
+}
+#navbarCollapse .nav-item {
+    color: white;
+    font-size: 25px;
+}
+.navbar-nav{
+    margin-left: 50vh;
+}
+
+.active{
+    background-color: #ef7e22;
+    font-style: italic;
+    border-radius: 5px;
+    text-align: center;
+}
+.active:hover{
+    background-color:rgb(65, 62, 62);
+    color: #1c1714;
+}
+.navbar-nav .nav-item:hover{
+    opacity:.9;
+    transform: scale(1.04) translateY(-3px);
+
+}
+/* --------------------------------------end of nav------------------- */
+.pic{
+    width: 100%;
+    height: 90vh;
+
+} 
+#about{
+    background-color: #f0852e;
+    margin-top: 10%;
+}
+.event{
+    margin-top: 10%;
+} 
+
+    
+.tag{
+    color: white;
+    text-align: center;
+}
+.logo{
+    padding: 20px;
+}
+.logo-work{
+    height: 50vh;
+    width: 20vh;
+}
+/* -----------------------------------card-------------------- */
+.box .card{
+    background-color: #0c0b0a;
+    border: 1px solid white;
+    color: white;
+}
+img{
+    height:150px;
+    width:100%;
+  }
+  
+  div [class^="col-"]{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710;
+    float: right;
+    padding: 5px;
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+  /* ---------------------carosoul-------------- */
+
+main {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleCaptions {
+  width: 40vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExampleCaptions::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff 30%, black 100%);
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+#carouselExampleCaptions::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(-90deg, #fff 30%, black 100%); */
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+.carousel-inner {
+  width: 60%;
+}
+
+.team1 {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+    border: none;
+    transition: filter 0.5s ease;
+}
+
+.team1 img {
+    /* filter: grayscale(100%); */
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+    object-position: 0% 20%;
+    border-radius: inherit;
+}
+
+.team1:hover img {
+  filter: grayscale(0);
+}
+
+.team1 .name {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.team1 .role {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+}
+
+.team1 .work-at {
+    font-size: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px){
+#carouselExampleCaptions {
+  width: 70vw;
+  height: 70vw;
+}
+
+#carouselExampleCaptions::before {
+  background: linear-gradient(90deg, #fff 60%, black 100%);
+}
+
+#carouselExampleCaptions::after {
+  background: linear-gradient(-90deg, #fff 60%, black 100%);
+}
+
+.team1 img {
+    width: 100%;
+    height: 10em;
+}
+
+.team1 .name {
+  margin-top: 1em;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.team1 .role {
+    font-size: 0.8em;
+}
+
+.team1 .work-at {
+    font-size: 0.6em;
+}
+}
+/* ------------------item------------ */
+.item img{
+    cursor: pointer;
+}
+.item img:hover{
+    transform: scale(1.04) translateY(-3px);
+    border-radius: 20px;
+}
+
+/* ------------------------choose-------- */
+.choose{
+    background-color:#f28933;
+    border-radius: 20px;}
+
+
+
+
+/* -------------------------------footer----------------------- */
+.footer{
+    color: white;
+}
+.ibox i{
+    font-size: 50px;
+    cursor: pointer;
+
+}
+.ibox i:hover{
+    color: #f28933;
+    opacity:.9;
+    transform: scale(1.04) translateY(-3px);
+}
+/* .nothing{
+    margin-left: 30%;
+} */
+form input{
+    height: 35px;
+    width: 350px;
+    display: block;
+    margin: 20px;
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 20px;
+    background-color: #f28933;
+    border-radius: 10px;
+
+}
+input::placeholder {
+    font-size: 15px;
+    padding-left: 20px;
+    color:rgb(26, 23, 23);
+    opacity: 0.5;
+  }
+  form .butt{
+    margin-left: 150px;
+    height: 50px;
+    width: 80px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f28933;
+    border-radius: 10px;
+}
+.butt:hover{
+    background-color: rgb(224, 211, 211);
+}
+
+/* ------------------------form------------ */
+.formClass{    
+    width: 500px;
+    height: 550px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-color: white;
+   
+
+}
+.formClass h1{
+    color: black;
+    font-size: 30px;
+}
+.formClass p{
+    color: black;
+    font-size: 15px;
+}
+.formClass label{
+    color: black;
+    text-align: left;
+    font-size: 10px;
+}
+.btnClass input{
+    display:flex;
+    width: 50%;
+    padding: 3px;
+}
+.newClass{
+    height: 100vh;
+    width: 100%;
+    display: none;
+   
+}
+.display{
+    display: block;
+}
+#btn{
+    background-color:#e47a23 ;
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#btn:hover{
+   background-color: white;
+   color: navy;
+   transition: .5s;
+}
+.crossIcon{
+    position: absolute;
+    font-size: 50px;
+    right: 25%;
+    top: 5%;
+    cursor: pointer;
+
+}
+
+/* -----------------------media------------- */
+
+@media only screen and (max-width:900px){
+    .item img:hover{
+        transform: scale(1.1);
+    }
+    .main{align-items: center;
+        position: absolute;
+        top: 10%;
+        right: 39%;
+        opacity: 0.3;
+    }
+        #our{
+            display: none;
+        }
+      
+}

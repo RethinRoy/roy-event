@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roy's Event Management</title>
+   <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background-color: black;">
+    
+ <div class="container-fluid" id="nav1st">
+  
+  <div class="container-fluid back" id="home">
+    <!-----------------------------------logo---------------------------->
+    <div class="main">
+       <h1 class="heading" style="text-shadow: 0 0 20px;color: #f8f5f2;"> ROY'S <br> Event Management</h1>
+       <a href="#" class="nav-item nav-link book1" style="color: white;" id="our"> Our Contact</a>
+      </div>
+        <!-------------------------------nav----------------------------->     
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <h5 style="font-style: italic; text-align: center; padding-top:5px; color: rgb(227, 221, 221); font-size: 30px;">Roy's</h5>
+                
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon" style="background-color: rgb(142, 75, 75);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav" >
+                    <a href="#home" class="nav-item nav-link " style="color: white;font-weight: bold;">Home</a>
+                    <a href="#about" class="nav-item nav-link" style="color: white; font-weight: bold;">About</a>
+                    <a href="#event" class="nav-item nav-link" style="color: white; font-weight: bold;">Events</a>
+                    <a href="#item" class="nav-item nav-link"style="color: white; font-weight: bold;">Gallery</a>
+                    <a href="#review" class="nav-item nav-link" style="color: white; font-weight: bold;">Blogs</a>
+                    <a href="#contact" class="nav-item nav-link" style="color: white; font-weight: bold;">Contact</a>
+                </div>
+                
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link active  book" style="color: white;" onclick="changeFunction()">Bookings</a>
+                    <div class="newClass">
+                      <div class="crossIcon">
+                          <i class='bx bx-x'></i>
+                      </div>
+                      <div class="formClass btnClass">
+                          <h1>Details for Bookings</h1>
+                          <label for="">First name</label>
+                          <input type="text" placeholder="Enter Your First Name" id="Name">
+                          <label for="">Last name</label>
+                          <input type="text" placeholder="Enter Your Last Name" id="Name">
+                          <label for="">Email</label>
+                          <input type="email"placeholder="Enter your Email" id="Email">
+                          <label for="">Password</label>
+                          <input type="password" placeholder="type your pass here" id="password">
+                          <button id="btn">Send Now</button>
+                          <p>You already have an account?<a href="#"> Log in</a></p>
+                      </div>
+                      <div id="result"></div>
+                  
+                  </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </div>
+ </div>
+ <br>
+ 
+ 
+      
+
+ <!------------------------About-------------------------->
+ <div class="container" id="about">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+     <div class="row logo">
+      <img src="pictures/Simple Minimalist White Summer Wedding Collage Event Instagram Post.jpg" alt="" class="logo-work">
+     </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="row logo">
+        <h2 class="tag">EVERYTHING YOU NEED</h2>
+        <br>
+        <br><br>
+      <p class="tag">
+        With a perfect blend of experience and passion, ROY'S Event Planner is an event management company in Bangladesh. We’ve emerged as a company with ideas to turn your corporate or personal event into something worth remembering. With the help of our creative team, we provide our services to most types of corporate events including, but not limited to, seminars, conferences, trade shows, cultural events, company or organization milestones, exhibitions, product launches, concerts, company annual meetings, corporate picnics, fashion shows and appreciation events. We will also strive to make your wedding events, birthday events and other personal events unforgettable.
+  
+      </p>
+
+      </div>
+      </div>
+  </div>
+</div>
+ <!---------------------------Events------------------------------>   
+ <div class="container " id="event">
+  <div class="heading">
+    <h1>Our Services</h1>
+    <hr>
+      <hr>
+  </div>
+
+  <div class="row">
+    <div class="container mt-2">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/bride-groom-wedding-reception_23-2150167248 (1).jpg" alt="Photo of sunset">
+              <h5 class="card-title mt-3 mb-3">WEDDING</h5>
+              <p class="card-text">We Organize All Kinds Of WEDDING.</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/brooke-lark-YwSy97_Rk1o-unsplash.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">BIRTHDAY</h5>
+              <p class="card-text">We Organize All Kinds Of BIRTHDAY Parties.</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/depositphotos_179000118-stock-photo-abstract-blurred-photo-conference-hall.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">Conference</h5>
+              <p class="card-text">We Organize All Kinds Of conferences.</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/freestyler-best-belgrade.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">CLUBparty</h5>
+              <p class="card-text">We Organize All Kinds Of CLUB PARTIES.</p> 
+        </div>
+          </div>    
+        </div>
+        
+      </div>
+      
+  </div>
+<br>
+  <div class="row">
+    <div class="container mt-2">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/guests-attend-the-new-product-launch-event-for-huawei-honor-9x-series-smartphones-in-xian-city-northwest-chinas-shaanxi-province-23-july-2019-h-WA9W52.jpg" alt="Photo of sunset">
+              <h5 class="card-title mt-3 mb-3">BRAND LAUNCH</h5>
+              <p class="card-text">We Organize All Kinds Of BRAND LAUNCHING PARTY.</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/marc-babin-aQWmCH_b3MU-unsplash.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">Different Functions</h5>
+              <p class="card-text">We Organize All Kinds Of Different Functions.</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/pexels-ywanphoto-57980.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">Annual Functions</h5>
+              <p class="card-text">We Organize All Kinds Of Annual Functions .</p> 
+        </div>
+          </div>
+          <div class="col-md-3 col-sm-6 box">
+            <div class="card card-block">
+            <h4 class="card-title text-right"><i class='bx bx-cog'></i></h4>
+          <img src="pictures/photo-big-company-students-having-entered-night-club-to-have-fun-dance-together-excited-facial-photo-big-company-162492001.jpg" alt="Photo of sunset">
+              <h5 class="card-title  mt-3 mb-3">School,Collage,University Program</h5>
+              <p class="card-text">We Organize All Kinds Of School,Collage,University Program .</p> 
+        </div>
+          </div>    
+        </div>
+        
+      </div>
+  
+</div>
+
+
+ </div><!--------------events end------->
+
+ <!--------------------------------first carousal-------------------->
+
+  <div class="heading">
+    <h3>Our Recent Events</h3>
+    <hr>
+    <hr>
+  </div>
+
+          <main>
+            <section>
+      
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <section>
+                  <p>The Team</p>
+              </section>
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  
+                  <div class="carousel-inner"><!--The Carousel Container-->
+      
+                    <div class="carousel-item active"><!--The Carousel Slider-->
+                      <aside class="card team1 text-bg-dark">
+                          <img src="pictures/pexels-minan1398-758898.jpg" alt="">
+                          <h2 class="name">Wedding</h2>
+                          <p class="role">Pahari wedding</p>
+                          <p class="work-at">Markson Inc</p>
+                      </aside>
+                    </div>
+      
+                    <div class="carousel-item">
+                      <aside class="card team1 text-bg-dark">
+                          <img src="pictures/pexels-bintimalu-5816094.jpg" alt="">
+                          <h2 class="name">Birthday</h2>
+                          <p class="role">Birthday party of an adult</p>
+                          <p class="work-at">Duper Duper</p>
+                      </aside>
+                    </div>
+      
+                    <div class="carousel-item">
+                      <aside class="card team1 text-bg-dark">
+                        <img src="pictures/pexels-asadphoto-169198.jpg" alt="">
+                        <h2 class="name">Beach wedding</h2>
+                        <p class="role">Wedding at the beach</p>
+                        <p class="work-at">Cox's bazar</p>
+                    </aside>
+                    </div>
+      
+                    <div class="carousel-item">
+                      <aside class="card team1 text-bg-dark">
+                        <img src="pictures/pexels-alex-morua-2149337523-30730350.jpg" alt="">
+                        <h2 class="name">Club Party</h2>
+                        <p class="role">Western party Theme</p>
+                        <p class="work-at">Newness Golf</p>
+                      </aside>
+                    </div>
+      
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </section>
+          
+        </main>
+         
+      
+
+
+
+<!-------------------------end of carousel---------------------->
+
+
+<!------------------------------------------------Item---------------------->
+ <div class="container item-box" id="item">
+  <div class="heading">
+    <h1>Our Popular Event Items</h1>
+    <hr>
+      <hr>
+  </div>
+  
+  <div class="row">
+    
+    <div class="col"> <!--col-md-3 col-sm-2 -->
+      <div class="item">
+      <img src="pictures/panagiotis-falcos-4T-jKyx1cQk-unsplash.jpg" alt="">
+      <div class="heading">
+        <h3 class="item-title">Sound System</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col"> <!--col-md-3 col-sm-2 -->
+    <div class="item">
+      <img src="pictures/kevin-o-connor-JxSLigoB-6A-unsplash.jpg" alt="">
+      <div class="heading">
+        <h3 class="item-title">lED wall screen</h3>
+      </div>
+      
+    </div>
+  </div>
+     <div class="col"> <!--col-md-3 col-sm-2 -->
+      <div class="item">
+      <img src="pictures/low-angle-giant-wheel-with-blue-sky.jpg" alt="">
+      <div class="heading">
+        <h3 class="item-title">Lighting System</h3>
+      </div>
+      
+    </div>
+  </div>
+      <div class="col"> <!--col-md-3 col-sm-2 -->
+        <div class="item">
+          <img src="pictures/band-party-performing-traditional-hindu-260nw-2327728219.webp" alt="">
+          <div class="heading">
+            <h3 class="item-title"> Band Party</h3>
+          </div>
+          
+        </div>
+      </div>     
+
+    </div>  
+<br>
+
+    <div class="row">
+    
+      <div class="col"> <!--col-md-3 col-sm-2 -->
+        <div class="item">
+        <img src="pictures/download.jpeg" alt="">
+        <div class="heading">
+        <h3 class="item-title">Palki</h3>
+      </div>
+      </div>
+    </div>
+    <div class="col"> <!--col-md-3 col-sm-2 -->
+      <div class="item">
+        <img src="pictures/cb414c_c88062ac6bbf4cddbfc47178e20bae12~mv2.webp" alt="">
+        <div class="heading">
+        <h3 class="item-title">Ghorargari</h3>
+      </div>
+      </div>
+    </div>
+       <div class="col"> <!--col-md-3 col-sm-2 -->
+        <div class="item">
+        <img src="pictures/a-wedding-stage-decorated-with-flowers-and-garlands-ai-generated-free-photo.jpg" alt="">
+        <div class="heading">
+        <h3 class="item-title">Decorations</h3>
+      </div>
+      </div>
+    </div>
+        <div class="col"> <!--col-md-3 col-sm-2 -->
+          <div class="item">
+            <img src="pictures/handsome-african-guy-with-stylish-haircut-taking-photo-digital-camera_171337-1345.avif" alt="">
+            <div class="heading">
+        <h3 class="item-title">Photographer</h3>
+      </div>
+          </div>
+        </div>
+        
+  
+      </div>  
+  
+ </div>
+
+
+<!-------------------------end of items------------------>
+
+<br>
+<!-----------------Choose------------------>
+<div class="container choose">
+  <div class="row">
+    <div class="heading">
+      <h3>Why Choose Us for your Event?</h3>
+      <div style="color: rgb(234, 38, 38);">Event that you will Remember</div>
+    </div>
+    
+    
+    <div class="col-md-6">
+      <div class="Justfit-benefit-section">
+        <span class="benefit-icon" style="font-size: 40px; font-weight: bold;"><i class='bx bx-anchor'></i></span>
+        <header style="color: white;">
+          <h4 class="title front-view-title">All kind of Logistics and Resources Support</h4>
+          <div class="front-view-content">
+            As an experienced Event Management company, we have all kind of Event equipment, logistics and resources available
+          </div>
+        </header>
+      </div>
+
+     
+    </div>
+    <div class="col-md-6">
+      <div class="Justfit-benefit-section">
+        <span class="benefit-icon" style="font-size: 40px; font-weight: bold"><i class='bx bxs-beer'></i></span>
+        <header style="color: white;">
+          <h2 class="title front-view-title">Experienced Event Planner and Manager</h2>
+          <div class="front-view-content">
+            <p>When it's about making your Event successful, it's all about making a good plan, managing and executing successfully. And, we have experienced who will make your event unique and memorable!	</p>						
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------------end of choose------------------>
+
+
+<!------------------------------review------------------------------>
+<div class="container" style="padding-top: 30px;" id="review">
+  <div class="row">
+    <div class="heading">
+      <h3>OUR CLIENT REVIEW</h3>
+      <hr>
+      <hr>
+      
+    </div>
+    <div class="col-md-4">  
+    </div>
+    <div class="col-md-4 nothing">
+  
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pictures/Yellow And Black Customer Testimonial Facebook Post (1).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/Yellow And Black Customer Testimonial Facebook Post (2).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/Yellow And Black Customer Testimonial Facebook Post (3).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/Yellow And Black Customer Testimonial Facebook Post.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+     
+    </div>
+  </div>
+</div>
+<br><br>
+<!---------------------------Footer----------------->
+<div class="container footer" id="contact">
+  <div class="row">
+    <section>
+      <a name="contact"></a>
+      <h1>Contact Us</h1>
+      <hr>
+      <p>We’re here to help! Feel free to reach out to us for any inquiries, support, or feedback.</p>
+      </section>
+      
+        <div class="col-md-6">
+          <div class="detail">
+              <h3><i class='bx bx-current-location'></i>Address</h3>
+              <p>Address:26 Trunk,city Road ,09 road New Town</p>
+              <h3><i class='bx bxs-phone'></i>Phone</h3>
+              <p>+0987654321</p>
+              <h3><i class='bx bx-envelope'></i>Email</h3>
+              <p>info@hershield.com</p>
+              <h4>Follow us-</h4>
+              <div class="ibox">
+              <i class='bx bxl-facebook'></i>
+          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-instagram'></i>
+          <i class='bx bxl-linkedin'></i>
+      </div>
+          </div>
+        </div>
+          <div class="col-md-6">
+          <div class="form">
+              <form action="">
+                  <h3>Send Message</h3>
+                  <input type="text" placeholder="Full Name">
+                  <input type="email"
+                  placeholder="Email">
+                  <input type="text" placeholder="Type your Message...">
+                  <button class="butt">Send</button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="landing.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/Bootstrap@5.3.2/dist/js/Bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</body>
+</html>
